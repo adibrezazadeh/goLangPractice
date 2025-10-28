@@ -73,12 +73,12 @@ func writeBalanceToFile(balance float64) {
 func getBalanceFromFile() (float64, error) {
 	data, err := os.ReadFile("balance.txt")
 	if err != nil {
-		return 0, errors.New("!!Can not Find File!!")
+		return 0, errors.New("can not find file")
 	}
 	balanceText := string(data)
 	balance, err := strconv.ParseFloat(balanceText, 64)
 	if err != nil {
-		return 0, errors.New("!!Can not Parse Balance!!")
+		return 0, errors.New("can not parse balance")
 	}
 	return balance, nil
 
