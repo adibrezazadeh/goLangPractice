@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func Bank() {
-	menu()
+	var amountBalance float64 = 0
+	choice := menu()
+	if choice == 1 {
+		fmt.Println("Your Amount Balance Is: ", amountBalance)
+		menu()
+	}
 }
 
 func menu() int {
