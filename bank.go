@@ -14,6 +14,7 @@ func menu() int {
 	fmt.Println("2. Deposit Money")
 	fmt.Println("3. Withdraw Money")
 	fmt.Println("4. EXIT")
+	fmt.Print("4. Your Choice: ")
 	fmt.Scan(&menuChoose)
 	return menuChoose
 }
