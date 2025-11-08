@@ -1,6 +1,6 @@
 package main
 
-import priceCalculator "example.com/first/priceCalculator"
+import "example.com/first/priceCalculator"
 
 func main() {
 	// InvestCalculate()
